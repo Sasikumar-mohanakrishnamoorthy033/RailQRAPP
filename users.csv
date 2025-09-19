@@ -1,0 +1,7 @@
+EmployerID,Username,Password,Role
+1001,admin1,Admin@123,Admin
+1002,je01,JEpass01,JE
+1003,pwi01,PWIpass01,PWI
+1004,sre01,SREpass01,SRE
+1005,dre01,DREpass01,DRE
+1006,zonal01,ZONpass01,Zonal
