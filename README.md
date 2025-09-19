@@ -21,7 +21,7 @@ This project was built for **Smart India Hackathon 2025**.
 
 ## How to Run Locally
 ```bash
-git clone https://github.com/<your-username>/IR-TMR.git
+git clone https://github.com/sasikumar-mohananakrishnamoory033/IR-TMR.git
 cd IR-TMR
 pip install -r requirements.txt
 streamlit run app.py
