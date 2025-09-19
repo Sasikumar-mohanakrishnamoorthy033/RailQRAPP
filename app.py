@@ -20,7 +20,8 @@ import qrcode
 import pandas as pd
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
-from cv2
+import cv2
+
 
 
 # ========================
@@ -471,4 +472,5 @@ else:
         st.session_state.logged_in = False
         st.session_state.user = None
         st.rerun()
+
 
