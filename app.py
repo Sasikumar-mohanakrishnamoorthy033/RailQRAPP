@@ -20,7 +20,7 @@ import qrcode
 import pandas as pd
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
-from pyzbar.pyzbar import decode
+from cv2
 
 
 # ========================
@@ -173,10 +173,10 @@ def update_product(uid, fitted_date=None, inspection_date=None, status=None):
 def decode_qr_from_image(image_file):
     img = Image.open(image_file).convert("RGB")
     img_np = np.array(img)
-    decoded_objs = decode(img_np)
-    if decoded_objs:
-        return decoded_objs[0].data.decode("utf-8")
-    return None
+    detector = cv2.QRCodeDetector()
+    data, points, _ = detector.detectAndDecode(img_np)
+    return data if data else None
+
 
 
 # ========================
@@ -471,3 +471,4 @@ else:
         st.session_state.logged_in = False
         st.session_state.user = None
         st.rerun()
+
